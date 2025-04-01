@@ -6,6 +6,8 @@ This repository contains the complete design and implementation of a 16-point Fa
 
 This implementation focuses on optimizing for power efficiency and area constraints while maintaining high throughput for real-time applications. The design employs a radix-2 decimation-in-time (DIT) architecture and has been verified through extensive simulation and physical implementation.
 
+![alt text](image.png)
+
 ## Problem Statement
 
 Modern signal processing applications demand efficient hardware implementations of FFT algorithms that can deliver:
