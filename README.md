@@ -3,7 +3,7 @@
 1. [Introduction](#introduction)
 2. [Problem Statement](#problem-statement)
 3. [Methodology](#methodology)
-    - [Algorithm Selection](#algorithm-selection)
+    - [Design Architecture](#Design Architecture)
     - [Design Approach](#design-approach)
     - [Hardware Description](#hardware-description)
     - [Synthesis and Optimization](#synthesis-and-optimization)
