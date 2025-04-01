@@ -10,8 +10,7 @@
     - [Simulation and Verification](#simulation-and-verification)
 4. [Results and Discussion](#results-and-discussion)
 5. [Conclusion and Future Work](#conclusion-and-future-work)
-6. [License](#license)
-7. [Contributions](#contributions)
+6. [Contributions](#contributions)
 
 
 ## Introduction
