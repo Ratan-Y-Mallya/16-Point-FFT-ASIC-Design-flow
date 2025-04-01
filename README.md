@@ -66,7 +66,7 @@ The synthesized design statistics:
     - $_XNOR_: 1
     - $_XOR_: 5
     - sky130_fd_sc_hd__dfxtp_2: 651
-
+![alt text](image-2.png)
   
 
 4. **Post-Layout Verification**
