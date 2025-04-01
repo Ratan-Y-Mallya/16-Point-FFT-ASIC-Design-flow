@@ -1,6 +1,6 @@
 # 16-Point FFT ASIC Design Flow
 ##  Table of Contents
-1. [Introduction](#-introduction)
+1. [Introduction](#-Introduction)
 2. [Problem Statement](#-problem-statement)
 3. [Methodology](#-methodology)
     - [Algorithm Selection](#1️⃣-algorithm-selection)
