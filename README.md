@@ -184,18 +184,18 @@ Several improvements and extensions are planned for future iterations:
 
 
 ### Contributors
-- **Mayank Singh**  
-  *(Mentor)*
-- **Priyansh Joshi**  
-  *(Mentor)*
-- **Sanskriti Saxena**  
-  *(Mentor)*
-- **Mukul Paliwal**  
-  *(Mentee)*
-- **Prateek Goel**  
-  *(Mentee)*
-- **Ratan Y Mallya**  
-  *(Mentee)*
-- **Rishad Ranjith**  
-  *(Mentee)*
+- **Mayank Singh**                                           - **Mukul Paliwal**  
+  *(Mentor)*                                                   *(Mentee)*
+- **Priyansh Joshi**                                         - **Prateek Goel** 
+  *(Mentor)*                                                   *(Mentee)*
+- **Sanskriti Saxena**                                       - **Ratan Y Mallya** 
+  *(Mentor)*                                                   *(Mentee)*
+                                                             - **Rishad Ranjith**
+                                                               *(Mentee)*
+ 
+  
+ 
+  
+  
+ 
 
