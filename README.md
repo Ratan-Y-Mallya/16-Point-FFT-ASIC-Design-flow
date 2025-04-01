@@ -1,4 +1,18 @@
 # 16-Point FFT ASIC Design Flow
+##  Table of Contents
+1. [Introduction](#-introduction)
+2. [Problem Statement](#-problem-statement)
+3. [Methodology](#-methodology)
+    - [Algorithm Selection](#1️⃣-algorithm-selection)
+    - [Design Approach](#2️⃣-design-approach)
+    - [Hardware Description](#3️⃣-hardware-description)
+    - [Synthesis and Optimization](#4️⃣-synthesis-and-optimization)
+    - [Simulation and Verification](#5️⃣-simulation-and-verification)
+4. [Results and Discussion](#-results-and-discussion)
+5. [Conclusion and Future Work](#-conclusion-and-future-work)
+6. [License](#-license)
+7. [Contributions](#-contributions)
+
 
 ## Introduction
 
@@ -168,30 +182,20 @@ Several improvements and extensions are planned for future iterations:
    - Add formal verification for critical blocks
    - Improve coverage-driven verification methodology
 
-## Repository Structure
 
-├── docs/
-│   ├── architecture.pdf
-│   ├── test_results.pdf
-│   └── timing_reports.pdf
-├── rtl/
-│   ├── fft_top.v
-│   ├── butterfly.v
-│   ├── twiddle_rom.v
-│   ├── control_unit.v
-│   └── memory_unit.v
-├── testbench/
-│   ├── tb_fft_top.v
-│   ├── fft_golden_model.py
-│   └── test_vectors/
-├── synthesis/
-│   ├── constraints.sdc
-│   └── scripts/
-├── layout/
-│   ├── floorplan.def
-│   └── scripts/
-├── results/
-│   ├── gate_level_netlist.v
-│   ├── power_reports/
-│   └── timing_reports/
-└── README.md
+### Contributors
+- **Mayank Singh**  
+  *(Mentor)*
+- **Priyansh Joshi**  
+  *(Mentor)*
+- **Sanskriti Saxena**  
+  *(Mentor)*
+- **Mukul Paliwal**  
+  *(Mentee)*
+- **Prateek Goel**  
+  *(Mentee)*
+- **Ratan Y Mallya**  
+  *(Mentee)*
+- **Rishad Ranjith**  
+  *(Mentee)*
+
