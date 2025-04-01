@@ -38,37 +38,55 @@ The 16-point FFT processor uses a radix-2 DIT architecture with the following co
    - Parameterized design for flexibility
    - Fixed-point arithmetic with configurable bit width
 
+   ![alt text](image-1.png)
+
 2. **Functional Verification**
    - RTL simulation using ModelSim/Xcelium
    - Testbench with golden model comparison
    - Verification of precision and numerical accuracy
 
 3. **Synthesis**
-   - Logic synthesis using Synopsys Design Compiler
-   - Timing constraints and optimization for target frequency
-   - Area and power optimization
+   ### Synthesis Statistics
 
-4. **Physical Design**
-   - Floorplanning and power planning
-   - Placement and routing using Cadence Innovus
-   - Clock tree synthesis and timing closure
-   - DRC and LVS verification
+The synthesized design statistics:
+  
+  - Number of wires: 1871
+  - Number of wire bits: 2593
+  - Number of public wires: 61
+  - Number of public wire bits: 769
+  - Number of cells: 2547
+    - $_ANDNOT_: 95
+    - $_AND_: 2
+    - $_MUX_: 1682
+    - $_NAND_: 9
+    - $_NOR_: 6
+    - $_NOT_: 9
+    - $_ORNOT_: 20
+    - $_OR_: 69
+    - $_XNOR_: 1
+    - $_XOR_: 5
+    - sky130_fd_sc_hd__dfxtp_2: 651
 
-5. **Post-Layout Verification**
+  
+
+4. **Post-Layout Verification**
    - Post-layout simulation with extracted parasitics
    - Static timing analysis
    - Power analysis using PrimeTime PX
 
+   ![alt text](image-3.png)
+
 ### Tools Used
 
 - RTL Design: Verilog/VHDL
-- Simulation: ModelSim/Xcelium
-- Synthesis: Synopsys Design Compiler
-- Place & Route: Cadence Innovus
-- Verification: Synopsys VCS, Formality
-- Timing Analysis: PrimeTime
-- Power Analysis: PrimeTime PX
-- Physical Verification: Calibre
+- Simulation: Vivado
+- Synthesis: Yosys (via OpenLane)
+- Place & Route: OpenROAD (via OpenLane)
+- Physical Design Flow: OpenLane
+- DRC & LVS: Magic/Netgen (via OpenLane)
+- Timing Analysis: OpenSTA (via OpenLane)
+- Power Analysis: OpenSTA
+- Physical Verification: Magic
 
 ## Results and Discussion
 
@@ -76,7 +94,7 @@ The 16-point FFT processor uses a radix-2 DIT architecture with the following co
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| Technology | 28nm CMOS | TSMC process |
+| Technology | 130nm CMOS | skypdk process |
 | Core Area | 0.12 mm² | After place and route |
 | Clock Frequency | 500 MHz | Worst-case corner |
 | Throughput | 250 MSamples/s | For complex input data |
@@ -95,15 +113,19 @@ The final design area is distributed as follows:
 
 ### Power Analysis
 
-Power distribution at 500 MHz operation:
-- Dynamic Power: 14.2 mW (79%)
-- Leakage Power: 3.8 mW (21%)
+### Power Analysis
 
-Further breakdown of dynamic power:
-- Combinational Logic: 35%
-- Sequential Elements: 25%
-- Clock Network: 30%
-- Memory Elements: 10%
+Power distribution based on OpenSTA power report:
+- Total Power: 6.61e-03 Watts (6.61 mW)
+- Internal Power: 4.71e-03 W (71.3%)
+- Switching Power: 1.89e-03 W (28.7%)
+- Leakage Power: 2.62e-08 W (negligible)
+
+Power breakdown by component type:
+- Sequential Elements: 2.96e-03 W (44.9%)
+- Combinational Logic: 3.64e-03 W (55.1%)
+- Macro: 0.00e+00 W (0.0%)
+- Pad: 0.00e+00 W (0.0%)
 
 ### Critical Path Analysis
 
