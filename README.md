@@ -1,17 +1,17 @@
 # 16-Point FFT ASIC Design Flow
 ##  Table of Contents
-1. [Introduction](#-Introduction)
-2. [Problem Statement](#-problem-statement)
-3. [Methodology](#-methodology)
-    - [Algorithm Selection](#1️⃣-algorithm-selection)
-    - [Design Approach](#2️⃣-design-approach)
-    - [Hardware Description](#3️⃣-hardware-description)
-    - [Synthesis and Optimization](#4️⃣-synthesis-and-optimization)
-    - [Simulation and Verification](#5️⃣-simulation-and-verification)
-4. [Results and Discussion](#-results-and-discussion)
-5. [Conclusion and Future Work](#-conclusion-and-future-work)
-6. [License](#-license)
-7. [Contributions](#-contributions)
+1. [Introduction](#introduction)
+2. [Problem Statement](#problem-statement)
+3. [Methodology](#methodology)
+    - [Algorithm Selection](#algorithm-selection)
+    - [Design Approach](#design-approach)
+    - [Hardware Description](#hardware-description)
+    - [Synthesis and Optimization](#synthesis-and-optimization)
+    - [Simulation and Verification](#simulation-and-verification)
+4. [Results and Discussion](#results-and-discussion)
+5. [Conclusion and Future Work](#conclusion-and-future-work)
+6. [License](#license)
+7. [Contributions](#contributions)
 
 
 ## Introduction
