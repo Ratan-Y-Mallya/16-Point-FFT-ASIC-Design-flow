@@ -20,7 +20,7 @@ This repository contains the complete design and implementation of a 16-point Fa
 
 This implementation focuses on optimizing for power efficiency and area constraints while maintaining high throughput for real-time applications. The design employs a radix-2 decimation-in-time (DIT) architecture and has been verified through extensive simulation and physical implementation.
 
-![alt text](image.png)
+![alt text](outputs/image.png)
 
 ## Problem Statement
 
@@ -52,7 +52,7 @@ The 16-point FFT processor uses a radix-2 DIT architecture with the following co
    - Parameterized design for flexibility
    - Fixed-point arithmetic with configurable bit width
 
-   ![alt text](image-1.png)
+   ![alt text](outputs/image-1.png)
 
 2. **Functional Verification**
    - RTL simulation using ModelSim/Xcelium
@@ -80,7 +80,7 @@ The synthesized design statistics:
     - $_XNOR_: 1
     - $_XOR_: 5
     - sky130_fd_sc_hd__dfxtp_2: 651
-![alt text](image-2.png)
+![alt text](outputs/image-2.png)
   
 
 4. **Post-Layout Verification**
@@ -88,7 +88,7 @@ The synthesized design statistics:
    - Static timing analysis
    - Power analysis using PrimeTime PX
 
-   ![alt text](image-3.png)
+   ![alt text](outputs/image-3.png)
 
 ### Tools Used
 
