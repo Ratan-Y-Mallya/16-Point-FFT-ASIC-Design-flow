@@ -11,7 +11,7 @@
 
 4. [Results and Discussion](#results-and-discussion)
 5. [Conclusion and Future Work](#conclusion-and-future-work)
-6. [Contributions](#contributions)
+6. [Contributors](#contributors)
 
 
 ## Introduction
